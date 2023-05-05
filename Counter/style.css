@@ -1,7 +1,6 @@
-:root{
-  --primary: #F7D636;
-  --secondary: #D4AA2F;
-  --tertiary: #BFE048;
+:root {
+  --jsYellow: #f0db4f;
+  --jsBlack: #323330;
   --white: #ffff;
 }
 
@@ -13,6 +12,56 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+/*menu navegação*/
+header {
+  background-color: var(--jsBlack);
+  width: 100%;
+  padding: 10px;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.5em;
+    font-family: 'Renegade';
+}
+
+.logo:hover{
+    color: var(--jsYellow);
+    transition: 300ms;
+}
+
+.menu-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu-nav ul {
+  display: flex;
+  list-style-type: none;
+  color: #fff;
+}
+
+.menu-nav ul li {
+  padding: 5px;
+  align-self: center;
+  font-size: 1.3rem;
+}
+
+.menu-nav ul li a {
+  color: #fff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-nav ul li a:hover {
+    color: var(--jsYellow);
+    transition: 300ms;
+}
+/*FIM MENU-NAVEGAÇÃO*/
 
 .container {
   display: flex;
@@ -49,7 +98,7 @@ main {
 }
 
 .box-button .btn {
-  background-color: #ffff;
+  background-color: var(--white);
   padding: 10px;
   font-size: 1.3rem
 }

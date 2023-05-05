@@ -12,7 +12,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
+  font-family: sans-serif;
 }
 
 /*menu navegação*/
@@ -120,4 +120,49 @@ header {
     cursor: pointer;
 }
 
-/*Fim Menu-Navegação*/
+/*FIM MAIN*/
+
+/*SESSÂO PROJETOS*/
+
+.container-projetos{
+    margin-top: 20px;
+    height: auto;
+}
+
+.container-projetos .title2{
+    font-size: 2.3rem;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.lista-projetos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content:center ;
+    justify-content: space-evenly;
+}
+
+.lista-projetos .container-projeto{
+    background-color: var(--jsBlack);
+    padding: 5px;
+}
+
+.container-projeto li{
+    list-style: none;
+    text-align: center;
+}
+
+.container-projeto li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.container-projeto li a:hover{
+    cursor: pointer;
+    color: var(--jsYellow);
+}
