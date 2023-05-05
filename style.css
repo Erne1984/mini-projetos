@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family:'Ferretorpia';
-    src: url('Assets/fonts/SF\ Ferretopia.ttf') format("truetype");
+    font-family:'Renegade ';
+    src: url('Assets/fonts/Renegade\ Pursuit.otf') format("truetype");
 }
 
 * {
@@ -15,9 +15,11 @@
   font-family: "Times New Roman", Times, serif;
 }
 
+/*menu navegação*/
 header {
   background-color: var(--jsBlack);
   width: 100%;
+  padding: 10px;
 }
 
 .logo {
@@ -25,14 +27,18 @@ header {
     text-decoration: none;
     padding: 5px;
     font-size: 1.5em;
-    font-family: 'Ferretorpia';
+    font-family: 'Renegade';
+}
+
+.logo:hover{
+    color: var(--jsYellow);
+    transition: 300ms;
 }
 
 .menu-nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 .menu-nav ul {
@@ -44,6 +50,7 @@ header {
 .menu-nav ul li {
   padding: 5px;
   align-self: center;
+  font-size: 1.3rem;
 }
 
 .menu-nav ul li a {
@@ -52,5 +59,65 @@ header {
   text-decoration: none;
 }
 
-.menu-nav ul .logo img {
+.menu-nav ul li a:hover {
+    color: var(--jsYellow);
+    transition: 300ms;
 }
+/*FIM MENU-NAVEGAÇÃO*/
+
+/* SEÇÃO MAIN */
+
+.container-principal {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--jsYellow);
+}
+
+.caixa-chamada{
+    background-color: rgb(27, 27, 27, 1);
+    height: 160px;
+    color: #fff;
+    box-shadow: 10px 5px 5px 1px black;
+    padding: 10px;
+}
+
+.caixa-chamada .title{
+    font-size: 2.3rem;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.caixa-chamada .span-descri{
+    font-size: 1.5rem;
+    padding: 10px;
+} 
+
+.caixa-chamada .container-btn{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.caixa-chamada .container-btn .btn-chamada{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    background-color: var(--jsBlack);
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 6px;
+    transition: 500ms;
+}
+
+.caixa-chamada .container-btn .btn-chamada:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+/*Fim Menu-Navegação*/
