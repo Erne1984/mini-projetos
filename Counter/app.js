@@ -7,4 +7,10 @@ btnIncremento.addEventListener("click", function () {
   numero.innerHTML = parseInt(numero.innerText) + 1;
 });
 
-btnDecre.addEventListener("click", function () {});
+btnDecre.addEventListener("click", function () {
+  numero.innerHTML = parseInt(numero.innerHTML - 1) 
+});
+
+btnReset.addEventListener("click", function(){
+   numero.innerHTML =  0
+})
